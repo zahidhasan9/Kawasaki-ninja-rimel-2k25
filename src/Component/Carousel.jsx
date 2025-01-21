@@ -54,6 +54,55 @@ const slides = [
     des: "THE PERFECT RIDE FOR ADVENTURERS",
     price: "STARTING AT $14,999 MSRP",
   },
+  {
+    type: "image",
+    src: Slide4,
+    title: "PERFORMANCE TO TAKE YOU FURTHER",
+    des: "ADVANCED SPORT TOURER FOR WEEKEND ESCAPES",
+    price: "STARTING AT $13,699 MSRP",
+  },
+  {
+    type: "image",
+    src: Slide5,
+    title: "THE ORIGINAL ICON",
+    des: "RETRO-STYLED MOTORCYCLE WITH MODERN PERFORMANCE",
+    price: "STARTING AT $5,999 MSRP",
+  },
+  {
+    type: "image",
+    src: Slide6,
+    title: "PEAK PREMIUM PERFORMANCE",
+    des: "4-CYLINDER POWER FOR THE WHOLE CREW",
+    price: "STARTING AT $30,699 MSRP",
+  },
+  {
+    type: "image",
+    src: Slide7,
+    title: "EVERY DAY IS ELECTRIC",
+    des: "2 EXCITING NEW ELECTRIC BALANCE BIKES FOR KIDS AND TEENS",
+    price: "STARTING AT $2,699 MSRP",
+  },
+  {
+    type: "image",
+    src: Slide8,
+    title: "NEW LOWER PRICE",
+    des: "ON SELECT KAWASAKI MOTORCYCLES",
+    price: "*Price reduction varies by model and year. Availability and pricing is subject to change.",
+  },
+  {
+    type: "image",
+    src: Slide9,
+    title: "BUILT TO WIN",
+    des: "450-CLASS LIMITED-EDITION SPECIAL RACER",
+    price: "STARTING AT $13,999 MSRP",
+  },
+  {
+    type: "image",
+    src: Slide10,
+    title: "PERFORMANCE. REFINEMENT. SUGOMI™.",
+    des: "PREMIUM SUPERNAKED WITH RAW PERFORMANCE",
+    price: "STARTING AT $9,999 MSRP",
+  },
 ];
 
 const Carousel = () => {
