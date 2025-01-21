@@ -9,46 +9,40 @@ import { FaRegCircleUser } from "react-icons/fa6";
 const Navbar = () => {
   return (
     <>
-      <div className="bg-[#a53535] pt-4 pr-0 pb-6 pl-0 ">
-        <div>Kawasaki</div>
-        <div>
-          <div>
-            <div>
-              <ul>
-                <div>
-                  <FaRegCircleUser />
-                </div>
+      <div className="bg-[blue]  flex justify-between px-7">
+        <div className="pt-4 pr-0 pb-6 pl-0">Kawasaki</div>
+        <div className="flex justify-center items-center gap-5 ">
+          <div >
+            <div className="flex gap-3">
+              <ul className="flex justify-center items-center navbar-list">
+                <FaRegCircleUser className="text-[#28a745]"/>
                 <li>My Kawasaki</li>
               </ul>
-              <ul>
-                <div>
-                  <HiOutlineShoppingCart />
-                </div>
+              <ul className="flex justify-center items-center navbar-list">
+                <HiOutlineShoppingCart className="text-[#28a745]"/>
                 <li>Cart</li>
               </ul>
-              <ul>
-                <div>
-                  <BsBagHeart />
-                </div>
+              <ul className="flex justify-center items-center navbar-list">
+                <BsBagHeart className="text-[#28a745]"/>
                 <li>Wish List</li>
               </ul>
-              <ul>
-                <div>
-                  <MdDirectionsBike />
-                </div>
+              <ul className="flex justify-center items-center navbar-list">
+                <MdDirectionsBike className="text-[#28a745]"/>
                 <li>Test Ride</li>
               </ul>
-              <ul>
-                <div>
-                  <IoLocationOutline />
-                </div>
+              <ul className="flex justify-center items-center navbar-list">
+                <IoLocationOutline className="text-[#28a745]"/>
                 <li>Find Dealer</li>
               </ul>
             </div>
           </div>
-          <div>
-            <div><input type='text' placeholder="Search"/></div>
-            <div><IoIosSearch/></div>
+          <div className="flex justify-center items-center gap-2">
+            <div>
+              <input type="text" placeholder="Search" className="bg-[#D7D7DA] border-none rounded-[3px] "/>
+            </div>
+            <div>
+              <IoIosSearch />
+            </div>
           </div>
         </div>
       </div>
