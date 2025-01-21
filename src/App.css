@@ -38,3 +38,61 @@ body{
     margin: 0;
   
 }
+
+/* Keyframe for Zoom In */
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Apply the zoom-in animation to images and videos */
+.carousel-container .splide__slide img,
+.carousel-container .splide__slide video {
+  animation: zoomIn 0.8s ease forwards;
+}
+
+/* Hover Effect on Image */
+.carousel-container .splide__slide img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Text Styling on Hover */
+.carousel-container .splide__slide .slide-content {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 8px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-container .splide__slide:hover .slide-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Style for the Title, Description, and Price */
+.carousel-container .splide__slide .slide-content h3 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.carousel-container .splide__slide .slide-content p {
+  font-size: 16px;
+}
+
+.carousel-container .splide__slide .slide-content span {
+  font-size: 18px;
+  font-weight: bold;
+}

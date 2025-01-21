@@ -1,5 +1,6 @@
 import "./App.css";
-import Navbar from "./assets/Component/Navbar";
+import Navbar from "./Component/Navbar";
+import Carousel from "./Component/Carousel";
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <Navbar></Navbar>
       <div>
         <hi>rimel</hi>
+        <Carousel/>
       </div>
     </>
   );
