@@ -9,8 +9,8 @@ import { FaRegCircleUser } from "react-icons/fa6";
 const Navbar = () => {
   return (
     <>
-      <div className="bg-[blue]  flex justify-between px-7">
-        <div className="pt-4 pr-0 pb-6 pl-0">Kawasaki</div>
+      <div className="bg-[#ffffff]  flex justify-between px-7">
+        <div className="pt-4 pr-0 pb-6 pl-0 font-OswaldSerif text-2xl">Kawasaki</div>
         <div className="flex justify-center items-center gap-5 ">
           <div >
             <div className="flex gap-3">

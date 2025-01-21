@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/nd-logos');
 
 @tailwind base;
 @tailwind components;
@@ -38,8 +39,22 @@ body{
     margin: 0;
   
 }
-
+/* ------------carousel csss---------- */
 /* Keyframe for Zoom In */
+
+.box{
+  border: 1px solid #6c3;
+    padding: 10px 15px;
+    color: #fff;
+    background: rgba(0, 0, 0, .75);
+    font-family: Oswald;
+    display: inline-block;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px
+}
 @keyframes zoomIn {
   0% {
     transform: scale(0.9);
@@ -57,42 +72,5 @@ body{
   animation: zoomIn 0.8s ease forwards;
 }
 
-/* Hover Effect on Image */
-.carousel-container .splide__slide img:hover {
-  transform: scale(1.1);
-  transition: transform 0.3s ease-in-out;
-}
 
-/* Text Styling on Hover */
-.carousel-container .splide__slide .slide-content {
-  position: absolute;
-  bottom: 10%;
-  left: 10%;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  border-radius: 8px;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
 
-.carousel-container .splide__slide:hover .slide-content {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Style for the Title, Description, and Price */
-.carousel-container .splide__slide .slide-content h3 {
-  font-size: 24px;
-  margin: 0;
-}
-
-.carousel-container .splide__slide .slide-content p {
-  font-size: 16px;
-}
-
-.carousel-container .splide__slide .slide-content span {
-  font-size: 18px;
-  font-weight: bold;
-}
