@@ -2,7 +2,6 @@ import React from "react";
 import '@splidejs/react-splide/css';
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import ReactPlayer from "react-player"; // For video playback
-import { motion } from "framer-motion"; // Import framer-motion
 
 // Import images and video
 import Slide from "../Assets/Slide.jpg";
@@ -159,7 +158,6 @@ const Carousel = () => {
                   width="100%"
                   height="auto"
                   className= 'bg-black '
-                  
                 />
                </div>
               )}
@@ -171,7 +169,6 @@ const Carousel = () => {
                 <p className='font-Fira_Serif font-normal text-[25px] leading-5 py-1 max-[700px]:text-[16px] max-[700px]:leading-5'>{slide.des}</p>
                 <div className='font-Fira_Serif font-normal text-[13px] leading-5 py-1 '>{slide.price}</div>
                 <div className='box'>Explore {slide.model}</div>
-                
               </div>
             </div>
           </SplideSlide>
@@ -181,11 +178,4 @@ const Carousel = () => {
     </>
   );
 };
-
 export default Carousel;
- 
- 
-//  <div className="font-Nd_Loogos slide-content">
-//                 <h3>{slide.title}</h3>
-//                 <p>{slide.des}</p>
-//                 <span>{slide.price}</span>
