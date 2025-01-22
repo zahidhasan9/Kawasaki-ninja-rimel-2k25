@@ -82,8 +82,8 @@ body{
   overflow: hidden;
   border-top-right-radius:50px ;
   border-top-left-radius:5px ;
+}
 
-  
-
-
+.offer >img{
+  border-bottom: 4px solid #6c3;
 }

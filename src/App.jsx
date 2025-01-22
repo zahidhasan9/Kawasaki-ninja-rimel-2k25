@@ -2,6 +2,7 @@ import "./App.css";
 import Navbar from "./Component/Navbar";
 import Carousel from "./Component/Carousel";
 import Offer from "./Component/Offer_promo"
+import Featured from "./Component/Featured"
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <div>
         <Carousel/>
         <Offer/>
+        <Featured/>
       </div>
     </>
   );
