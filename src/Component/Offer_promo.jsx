@@ -10,8 +10,9 @@ const Offer_promo = () => {
   return (
     <>
     <div className='bg-[#F1F1F1] py-10 px-20 '>
-        <div className='flex justify-center items-center py-10'>
-            <h1 className='font-Oswal_dSerif text-4xl font-medium'>OFFERS & PROMOTIONS</h1>
+        <div className='flex flex-col justify-center items-center py-10'>
+            <h1 className='font-Oswal_dSerif text-4xl font-medium py-2'>OFFERS & PROMOTIONS</h1>
+            <div className="border-b-[1px] border-[#6c3] w-[60%]" />
         </div>
         <div className='flex justify-center items-center' >
             <div className='grid grid-cols-3 gap-3'>

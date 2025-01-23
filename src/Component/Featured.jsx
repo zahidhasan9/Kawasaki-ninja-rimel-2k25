@@ -48,7 +48,7 @@ const Vehicle = [
 const Featured = () => {
   return (
     <>
-      <div className="bg-white">
+      <div className="bg-white pb-5">
         <div className="py-10">
           <div className="flex flex-col justify-end items-center">
             <div className="font-Oswal_dSerif text-4xl font-medium pb-2">
@@ -58,18 +58,21 @@ const Featured = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 py-5">
           {Vehicle.map((item, index) => (
             <div key={index} className=" py-8">
               <img src={item.src} alt="" />
-              <div className="text-center">
-                <h1>All-New 25</h1>
-                <p>{item.title}</p>
-                <div className="border-b-2 border-[#6c3]" />
-                <p>MSRP: {item.price}</p>
+              <div className="text-center flex items-center justify-center flex-col text-black">
+                <h1 className="text-base font-semibold">All-New 25</h1>
+                <p className="font-Nd_Loogos text-1xl text- border-b-2 border-[#6c3]" >{item.title}</p>
+                {/* <div className="font-Blinker_Serif font-medium border-b-2 border-[#6c3] w-[60%]" /> */}
+                <p className="font-Fira_Serif font-light text-sm">MSRP: {item.price}</p>
               </div>
             </div>
           ))}
+        </div>
+        <div className="flex justify-center items-center text-white py-5 ">
+        <button className="text-center font-Oswal_dSerif py-5 px-6 bg-black text-base rounded-sm font-semibold">VIEW ALL FEATURED VEHICLES</button>
         </div>
       </div>
     </>
