@@ -3,6 +3,7 @@ import Navbar from "./Component/Navbar";
 import Carousel from "./Component/Carousel";
 import Offer from "./Component/Offer_promo"
 import Featured from "./Component/Featured"
+import Accessories from "./Component/Accessories"
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Carousel/>
         <Offer/>
         <Featured/>
+        <Accessories/>
       </div>
     </>
   );
