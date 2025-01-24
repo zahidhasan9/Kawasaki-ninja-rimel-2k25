@@ -4,6 +4,7 @@ import Carousel from "./Component/Carousel";
 import Offer from "./Component/Offer_promo"
 import Featured from "./Component/Featured"
 import Accessories from "./Component/Accessories"
+import Footer from "./Component/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Featured/>
         <Accessories/>
       </div>
+      <Footer/>
     </>
   );
 }
