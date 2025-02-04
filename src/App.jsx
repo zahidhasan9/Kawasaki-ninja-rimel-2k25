@@ -1,23 +1,14 @@
-import "./App.css";
-import Navbar from "./Component/Navbar";
-import Carousel from "./Component/Carousel";
-import Offer from "./Component/Offer_promo"
-import Featured from "./Component/Featured"
-import Accessories from "./Component/Accessories"
-import Footer from "./Component/Footer";
+import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Layout from './Layout';
+import Vehicle from './Component/Vehicle';
 
 function App() {
   return (
-    <>
-      <Navbar></Navbar>
-      <div>
-        <Carousel/>
-        <Offer/>
-        <Featured/>
-        <Accessories/>
-      </div>
-      <Footer/>
-    </>
+    <Routes>
+      <Route path='/' element={<Layout />} />
+      <Route path='/vehicle' element={<Vehicle />} />
+    </Routes>
   );
 }
 
