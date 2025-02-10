@@ -1,5 +1,6 @@
 import React from "react";
-import {VihecleElectric} from "../Data/Data"
+import {VihecleElectric,ATV,RID,WAT} from "../Data/Data"
+import VehicleDatarender from "./vehicleDatarender";
 
 const Vehicle = () => {
   return (
@@ -12,8 +13,8 @@ const Vehicle = () => {
           <div className="border-b-[1px] border-[#6c3] w-[60%]" />
         </div>
 
-        <div className="flex ">
-          <div className="bg-fuchsia-400 h-screen w-3/12 py-5 px-3">
+        <div className="md:flex  ">
+          <div className="bg-fuchsia-400  md:w-[25%] py-5 px-3">
             <div className="flex flex-col items-start bg-[#e5e5e9] py-5 px-3">
               <div className="font-Oswal_dSerif w-full">
                 <h1 className="font-medium text-[#505055] text-base">FILTER</h1>
@@ -63,7 +64,13 @@ const Vehicle = () => {
             </div>
           </div>
 
-          <div className="bg-red-200 py-5 px-3">
+      <div className="md:w-[75%]">
+      <VehicleDatarender Vihecle={VihecleElectric}/>
+      <VehicleDatarender Vihecle={ATV}/>
+      <VehicleDatarender Vihecle={RID}/>
+      <VehicleDatarender Vihecle={WAT}/>
+      </div>
+          {/* <div className="bg-red-200 py-5 px-3">
             <div>
               <div className="mt-5 mb-10 font-Oswal_dSerif">
                 <h1 className="text-[#76767c] text-2xl font-normal">
@@ -72,15 +79,23 @@ const Vehicle = () => {
               </div>
               <div className="flex flex-wrap gap-4 bg-pink-400">
                 {VihecleElectric.map((item,index)=>
-                <div className=" flex items-start justify-start h-80 w-[300px] bg-white">
+               <div>
+                 <div className="shadow flex flex-col items-center justify-center h-80 w-[300px] bg-white">
                   <img src={item.src} alt={item.title}/>
-                </div>)}
+                  <div className="text-center flex items-center justify-center flex-col text-black">
+                <h1 className="text-sm font-Oswal_dSerif font-medium">2025</h1>
+                <p className="font-Nd_Loogos text-1xl text- border-b-2 border-[#6c3]" >{item.title}</p>
                 
-                {/* <div className="h-80 w-[300px] bg-red-500"></div>
-                <div className="h-80 w-[300px] bg-red-800"></div> */}
+                <p className="font-Fira_Serif font-light text-sm">MSRP: {item.price}</p>
               </div>
+                </div>
+               </div>
+              )}
+                
+              </div>
+              
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
