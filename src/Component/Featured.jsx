@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; 
 import Vehicles from "../Assets/VEHICLES/Vehicles.png";
 import Vehicles1 from "../Assets/VEHICLES/Vehicles1.png";
 import Vehicles2 from "../Assets/VEHICLES/Vehicles2.png";
@@ -72,7 +73,9 @@ const Featured = () => {
           ))}
         </div>
         <div className="flex justify-center items-center text-white py-5 ">
-        <button className="text-center font-Oswal_dSerif py-5 px-6 bg-black text-base rounded-sm font-semibold">VIEW ALL FEATURED VEHICLES</button>
+       <Link  to='/vehicle'>
+       <button className="text-center font-Oswal_dSerif py-5 px-6 bg-black text-base rounded-sm font-semibold">VIEW ALL FEATURED VEHICLES</button>
+       </Link>
         </div>
       </div>
     </>
