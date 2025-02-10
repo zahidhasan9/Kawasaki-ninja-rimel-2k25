@@ -6,34 +6,39 @@ import { MdDirectionsBike } from "react-icons/md";
 import { BsBagHeart } from "react-icons/bs";
 import { HiOutlineShoppingCart } from "react-icons/hi2";
 import { FaRegCircleUser } from "react-icons/fa6";
-import { GiClick } from "react-icons/gi";
+import { NavLink } from "react-router-dom";
 
 
 const NavItem=[
   {
     id:"1",
     menu:"My Kawasaki",
-    logo:FaRegCircleUser
+    logo:FaRegCircleUser,
+    link:''
   },
   {
     id:"2",
     menu:"Cart",
-    logo:HiOutlineShoppingCart
+    logo:HiOutlineShoppingCart,
+    link:'/cart'
   },
   {
     id:"3",
     menu:"Wish List",
-    logo:BsBagHeart
+    logo:BsBagHeart,
+    link:''
   },
   {
     id:"4",
     menu:"Test Ride",
-    logo:MdDirectionsBike
+    logo:MdDirectionsBike,
+    link:''
   },
   {
     id:"5",
     menu:"Find Dealer",
-    logo:IoLocationOutline
+    logo:IoLocationOutline,
+    link:''
   },
   
 ]
@@ -64,12 +69,14 @@ const Navbar = () => {
            {
             NavItem.map((item,index)=>
            (
-              <ul key={index} className="navbar-list flex justify-center items-center cursor-pointer ">
+              <NavLink to={item.link}>
+                <ul key={index} className="navbar-list flex justify-center items-center cursor-pointer ">
                 <div className="text-[#28a745]">
                   <item.logo className="text-[#28a745] hidden md:block lg:block"/>
                 </div>
                 <li className="font-Oswal_dSerif  leading-5 text-sm font-semibold hidden lg:block">{item.menu}</li>
               </ul>
+              </NavLink>
             
            ))
            }
