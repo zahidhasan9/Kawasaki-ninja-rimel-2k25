@@ -2,14 +2,14 @@ import React from "react";
 
 const vehicleDatarender = ({ Vihecle }) => {
   return (
-    <div className="bg-red-200 py-5 px-3 ">
+    <div className="py-5 px-3 ">
       <div>
         <div className="mt-5 mb-10 font-Oswal_dSerif">
           <h1 className="text-[#76767c] text-2xl font-normal">
             {Vihecle[0].Category}
           </h1>
         </div>
-        <div className="flex flex-wrap gap-4 bg-pink-400">
+        <div className="flex flex-wrap gap-4 ">
           {Vihecle.slice(1).map((item, index) => (
             <div key={index} className="w-full sm:w-1/2 md:w-[32%]">
               <div className="shadow flex flex-col items-center justify-center h-[344px] sm:h-auto md:h-80 bg-white">

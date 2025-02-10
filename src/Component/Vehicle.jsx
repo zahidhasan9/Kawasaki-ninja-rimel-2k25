@@ -14,7 +14,7 @@ const Vehicle = () => {
         </div>
 
         <div className="md:flex  ">
-          <div className="bg-fuchsia-400  md:w-[25%] py-5 px-3">
+          <div className=" md:w-[25%] py-5 px-3">
             <div className="flex flex-col items-start bg-[#e5e5e9] py-5 px-3">
               <div className="font-Oswal_dSerif w-full">
                 <h1 className="font-medium text-[#505055] text-base">FILTER</h1>
